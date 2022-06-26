@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">I'm Bruno and I'm a front-end developer from Brazil 🇧🇷</p>
+<p align="left">I'm Bruno, front-end developer from Brazil 🇧🇷</p>
 
 ###
 
