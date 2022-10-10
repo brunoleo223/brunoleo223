@@ -1,0 +1,8 @@
+@font-face {font-family: "Sequel 100 Wide 95";
+    src: url("d002e7c91b889cc10ce21789cfde95dd.eot"); /* IE9*/
+    src: url("d002e7c91b889cc10ce21789cfde95dd.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("d002e7c91b889cc10ce21789cfde95dd.woff2") format("woff2"), /* chrome、firefox */
+    url("d002e7c91b889cc10ce21789cfde95dd.woff") format("woff"), /* chrome、firefox */
+    url("d002e7c91b889cc10ce21789cfde95dd.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("d002e7c91b889cc10ce21789cfde95dd.svg#Sequel 100 Wide 95") format("svg"); /* iOS 4.1- */
+  }

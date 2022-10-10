@@ -1,8 +1,16 @@
 import type { NextPage } from 'next'
+import Image from 'next/image'
+import styles from '../styles/Index.module.scss'
 
 const Home: NextPage = () => {
   return (
-    <h1>Bruno</h1>
+    <>
+      <section className={styles.intro}>
+        <div className={styles.img}>
+          <Image src='/img/intro.png' layout='fill' />
+        </div>
+      </section>
+    </>
   )
 }
 
