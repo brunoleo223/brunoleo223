@@ -26,3 +26,13 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.content{
+  width: 100%;
+  padding: 0 50px;
+  margin: 0 auto;
+
+  .row{
+    display: flex;
+  }
+}
