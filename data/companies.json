@@ -1,0 +1,57 @@
+{
+    "companies": [
+
+        {
+            "name": "Amgen",
+            "link": "#",
+            "logoUrl": "/img/logo10.png"
+        },
+        {
+            "name": "Lenovo",
+            "link": "#",
+            "logoUrl": "/img/logo8.png"
+        },
+        {
+            "name": "Impact HUB",
+            "link": "#",
+            "logoUrl": "/img/logo1.png"
+        }, 
+         
+        {
+            "name": "Samsung",
+            "link": "#",
+            "logoUrl": "/img/logo9.png"
+        },
+        {
+            "name": "Singer",
+            "link": "#",
+            "logoUrl": "/img/logo3.png"
+        }, 
+        {
+            "name": "Electrolux",
+            "link": "#",
+            "logoUrl": "/img/logo2.png"
+        }, 
+
+        {
+            "name": "WWF",
+            "link": "#",
+            "logoUrl": "/img/logo7.png"
+        },
+        {
+            "name": "Danone",
+            "link": "#",
+            "logoUrl": "/img/logo4.png"
+        }, 
+        {
+            "name": "Wella",
+            "link": "#",
+            "logoUrl": "/img/logo6.png"
+        },
+        {
+            "name": "Teva",
+            "link": "#",
+            "logoUrl": "/img/logo5.png"
+        }
+    ]
+}

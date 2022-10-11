@@ -1,0 +1,37 @@
+.footer{
+    text-align: center;
+    padding-top: 100px;
+    border-top: 2px solid #d1d1d1;
+    margin-top: 100px;
+    .mail{
+        font-family: 'Sequel 100 Wide 95', sans-serif;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 5px;
+        span{
+            color: var(--highlight);
+        }
+
+        &:hover{
+            border-color: var(--highlight);
+        }
+    }
+    ul{
+        padding: 0;
+        margin-bottom: 100px;
+        li{
+            display: inline;
+            list-style-type: none;
+            margin-right: 20px;
+            border-bottom: 2px solid transparent;
+            &:hover{
+                border-color: var(--highlight);
+            }
+        }
+    }
+
+    .logo{
+        position: relative;
+        width: 100%;
+        height: 600px;
+    }
+}

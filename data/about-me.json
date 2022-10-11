@@ -1,0 +1,140 @@
+{
+    "about": {
+        "id": 0,
+        "firstName": "Bruno",
+        "lastName": "Leonardo",
+        "miniBio": "Desenvolvedor front-end, com 10 anos de experiência e mais de 100 sites programados do zero. Co-fundador da Agência VALUE de Marketing Digital e do Coletivo RUP de educação livre. Completamente dedicado a explorar o futuro e suas tecnologias.",
+        "social": [
+            {
+                "id": 0,
+                "name": "Github",
+                "iconUrl": "/img/github.svg",
+                "link": "#"
+            }, 
+            {
+                "id": 1,
+                "name": "Linkedin",
+                "iconUrl": "/img/linkedin.svg",
+                "link": "#"
+            }, 
+            {
+                "id": 2,
+                "name": "Instagrams",
+                "iconUrl": "/img/instagram.svg",
+                "link": "#"
+            }
+        ]
+    },
+    "skills": [
+        {
+            "id": 0,
+            "title": "Frontend",
+            "content": "HTML, CSS, Javascript, React JS, Next JS, Wordpress, PHP, MySQL, Tailwind, Fauna DB, Mongo DB, Vite JS, Webpack"
+        }, 
+        {
+            "id": 1,
+            "title": "Design",
+            "content": "Photoshop, Illustrator, Figma, Adobe XD, Canva, Adobe Premiere"
+        },
+        {
+            "id": 2,
+            "title": "Marketing",
+            "content": "SEO, Facebook e Google Ads, Analytics, CRM, Relatórios"
+        },
+        {
+            "id": 3,
+            "title": "Negócios",
+            "content": "Organização, Gestão de pessoas, Gestão de projetos, Apresentações, Pitch, Solução de Problemas, Facilidade para lidar com pressão"
+        },
+        {
+            "id": 4,
+            "title": "Idiomas",
+            "content": "Inglês avançado, espanhol básico para escrita e avançado para conversas"
+        }
+        
+    ],
+    
+    "experiences": [
+        {
+            "id": 0,
+            "company": "Grupo Digital Solvers",
+            "logoUrl": "/img/exp1.jpeg",
+            "role": "Tech Lead",
+            "duration": "2 yrs 5 mos",
+            "description": "Alinhamento e direcionamento de uma equipe de desenvolvimento de software com 10 integrantes."
+        },
+        {
+            "id": 1,
+            "company": "Agência Value",
+            "logoUrl": "/img/exp2.jpeg",
+            "role": "Co-founder and CTO",
+            "duration": "6 years",
+            "description": "Digital Marketing Agency focused on medium-sized companies."
+        },
+        {
+            "id": 2,
+            "company": "Trilha MPN",
+            "logoUrl": "/img/exp3.jpeg",
+            "role": "Content Creator",
+            "duration": "6 mos",
+            "description": "Criação de conteúdo de Negócios. Foram mais de 100 publicações feitas entre lives, roteirização, gravação e edição de reels para o Instagram, stories e feed posts."
+        },
+        {
+            "id": 3,
+            "company": "RUP Life",
+            "logoUrl": "/img/exp4.jpeg",
+            "role": "Co-founder",
+            "duration": "6 mos",
+            "description": "Organização de encontros livres sobre criatividade, design e experiência."
+        },
+        {
+            "id": 4,
+            "company": "Impact HUB",
+            "logoUrl": "/img/exp5.jpeg",
+            "role": "Desenvolvedor web front end",
+            "duration": "6 mos",
+            "description": "Criação de site e páginas para eventos"
+        }
+    ],
+    
+    "education": [
+        {
+            "id": 0,
+            "logoUrl": "/img/edu1.jpeg",
+            "title": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+            "school": "Universidade Católica de Brasília"
+        },
+        {
+            "id": 0,
+            "logoUrl": "/img/edu2.jpeg",
+            "title": "Master of Business Administration - MBA, Marketing e Negócios Digitais",
+            "school": "Be Academy"
+        },
+        {
+            "id": 0,
+            "logoUrl": "/img/edu3.jpeg",
+            "title": "Turma 10 no treinamento imersivo nas tecnologias mais modernas de desenvolvimento web e mobile.",
+            "school": "Rocketseat"
+        }
+    ],
+    "testing": [
+        {
+            "id": 0,
+            "logoUrl": "/img/edu3.jpeg",
+            "title": "Turma 10 no treinamento imersivo nas tecnologias mais modernas de desenvolvimento web e mobile.",
+            "school": "Rocketseat"
+        },
+        {
+            "id": 0,
+            "logoUrl": "/img/edu3.jpeg",
+            "title": "Turma 10 no treinamento imersivo nas tecnologias mais modernas de desenvolvimento web e mobile.",
+            "school": "Rocketseat"
+        },
+        {
+            "id": 0,
+            "logoUrl": "/img/edu3.jpeg",
+            "title": "Turma 10 no treinamento imersivo nas tecnologias mais modernas de desenvolvimento web e mobile.",
+            "school": "Rocketseat"
+        }
+    ]
+}

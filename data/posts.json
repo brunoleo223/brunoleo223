@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": 0,
+      "title": "Nasa APOD API Project",
+      "excerpt": "Esse é o primeiro projeto da minha lista de aplicações focadas em prática, teste e design. A Nasa disponibiliza várias APIs públicas e uma delas é a APOD (Astronomy Picture of the Day), então decidi montar um pequeno site que lista todas essas imagens de forma simples e bonita.",
+      "coverImage": "/img/cover0.png"
+    },
+    {
+      "id": 1,
+      "title": "Brazil Holidays",
+      "excerpt": "Brazil Holidays also is part of my list of applications focused on practice, testing and design.This project shows how many days until the next national holiday. At the moment it is only possible to know the next holiday, but in the future I want to implement a calendar so that users can access all the upcoming holidays and how much time is left until they arrive",
+      "coverImage": "/img/cover1.png"
+    },
+    {
+      "id": 2,
+      "title": "COPY.js",
+      "excerpt": "Todo desenvolvedor sabe que uma parte importante do seu trabalho é reutilizar códigos simples que geralmente não decoramos, como por exemplo remover valores duplicados de uma lista. É comum buscarmos por esses códigos em sites como Stackoverflow ou em projetos antigos. ",
+      "coverImage": "/img/cover2.png"
+    }
+  ]
+}
