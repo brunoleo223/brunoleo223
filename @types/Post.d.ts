@@ -6,7 +6,7 @@ export interface PostProps {
         cover: {
             responsiveImage: any
         };
-        content: object;
+        content: any;
         description: any;
     }
 }
