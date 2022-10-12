@@ -8,7 +8,7 @@ const {about}: AboutMeProps = AboutJson;
 
 export function Footer(){
     return (
-        <footer className={styles.footer}>
+        <footer id="contact" className={styles.footer}>
             <div className="content">
                 <Link href="mailto:work@brunoleo.com.br">
                     <a className={styles.mail}>work<span>@</span>brunoleo.com.br</a>

@@ -2,7 +2,7 @@ import styles from '../../styles/Index.module.scss';
 
 export function Blog(){
     return (
-        <section className={styles.blog}>
+        <section id='blog' className={styles.blog}>
         <div className="content">
           <div className={styles.link}>
             <h3>EDUCATION </h3>

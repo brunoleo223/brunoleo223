@@ -1,0 +1,42 @@
+.menu{
+    position: fixed;
+    top: 0;
+    left: 50px;
+    z-index: 99999;
+    padding: 0;
+    button{
+        background-color: var(-bg);
+        width: 40px;
+        height: 40px;
+        border: 1px solid var(--highlight);
+        border-radius: 50%;
+        cursor: pointer;
+
+    }
+    .button_active{
+        background-color: var(--highlight);
+    }
+    ul{
+        list-style: none;
+        padding-left: 0px;
+        font-family: 'Sequel 100 Wide 95', sans-serif;
+        text-transform: uppercase;
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+        li{
+            margin-bottom: -10px;
+            a{
+                background-color: var(--bg);
+                text-decoration: none;
+                &:hover{
+                    background-color: var(--highlight);
+                }
+            }
+        }
+    }
+
+    .ul_active{
+        height: auto;
+    }
+}
