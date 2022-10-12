@@ -6,6 +6,10 @@
         height: 100vh;
         position: relative;
 
+        & > div{
+            height: 100%;
+        }
+
         img{
             object-fit: cover;
         }
@@ -21,7 +25,9 @@
         }
         p{
             max-width: 80%;
-            margin-bottom: 50px;
+            // margin-bottom: 50px;
         }
+
     }
+    
 }

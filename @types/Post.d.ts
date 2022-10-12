@@ -1,8 +1,19 @@
 export interface PostProps {
     post: {
-        id: number;
+        slug: string;
         title: string;
-        excerpt: string;
-        coverImage: string;
+        id: string;
+        cover: {
+            responsiveImage: any
+        };
+        content: object;
+        description: any;
+    }
+}
+
+
+export interface PostsProps{
+    data: {
+        allProjects: PostProps[];
     }
 }

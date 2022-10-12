@@ -10,14 +10,19 @@ import AboutJson from '../data/about-me.json'
 import CompaniesJson from '../data/companies.json'
 import DepoimentsJson from '../data/depoiments.json'
 import { Footer } from '../components/Footer';
+import { request } from '../lib/datocms';
+import { PostsProps } from '../@types/Post';
 
+const Home: NextPage = ({data}: PostsProps) => {
 
-const postsData = PostsJson.posts;
-const companies = CompaniesJson.companies;
-const depoiments = DepoimentsJson.depoiments;
-const {about, skills, education, experiences}: AboutMeProps = AboutJson;
+  console.log(data.allProjects)
 
-const Home: NextPage = () => {
+  // const postsData = PostsJson.posts;
+  const postsData = data.allProjects;
+  const companies = CompaniesJson.companies;
+  const depoiments = DepoimentsJson.depoiments;
+  const
+   {about, skills, education, experiences}: AboutMeProps = AboutJson;
   return (
     <>
       {/* INTRO */}
@@ -32,7 +37,7 @@ const Home: NextPage = () => {
         <div className={styles.clip}></div>
         <div className={styles.wrapper}>
           {postsData.map(post => (
-            <Post key={post.id} post={post} />
+            <Post post={post} />
           ))}
         </div>
       </section>
@@ -212,3 +217,43 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+
+const BLOG_QUERY = `query MyQuery {
+  allProjects(locale: en) {
+    slug
+    title
+    id
+    cover {
+      responsiveImage {
+        width
+        webpSrcSet
+        title
+        srcSet
+        src
+        sizes
+        height
+        bgColor
+        base64
+        aspectRatio
+        alt
+      }
+    }
+    description {
+      value
+    }
+  }
+}
+`;
+
+export async function getStaticProps() {
+  const data = await request({
+    query: BLOG_QUERY,
+  })
+
+  return {
+    props: {
+      data
+    }
+  }
+}

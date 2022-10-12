@@ -1,18 +1,21 @@
 import Image from "next/image";
+import { Image as ImageDato } from "react-datocms";
 import Link from "next/link";
 import { PostProps } from "../../@types/Post";
 import styles from "./styles.module.scss";
+import { StructuredText } from "react-datocms";
 
 export function Post({post}: PostProps){   
+    console.log(post)
     return (
         <div className={styles.post}>
             <div className={styles.post__cover}>
-                <Image src={post.coverImage} layout="fill" />
+                <ImageDato data={post.cover.responsiveImage} />
             </div>
             <div className={styles.post__content}>
                 <h3>{post.title}</h3>
-                <p>{post.excerpt}</p>
-                <Link href="#">
+                <StructuredText data={post.description} />
+                <Link href={`articles/${post.slug}`}>
                     <a><Image src='/img/seta.png' width={80} height={30} /></a>
                 </Link>
             </div>
