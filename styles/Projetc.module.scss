@@ -60,4 +60,12 @@
         max-width: 100%;
     }
     
+    &::after{
+        content: '//';
+        font-size: 3rem;
+        display: block;
+        text-align: center;
+        color: var(--highlight);
+        margin: 60px 0 90px 0;
+    }
 }

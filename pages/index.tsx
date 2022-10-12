@@ -5,12 +5,12 @@ import { Post } from '../components/Post'
 import styles from '../styles/Index.module.scss';
 import { AboutMeProps } from '../@types/About';
 
-import PostsJson from '../data/posts.json'
 import AboutJson from '../data/about-me.json'
 import CompaniesJson from '../data/companies.json'
 import DepoimentsJson from '../data/depoiments.json'
 import { request } from '../lib/datocms';
 import { PostsProps } from '../@types/Post';
+import { Blog } from '../components/Blog';
 
 const Home: NextPage = ({data}: PostsProps) => {
 
@@ -184,31 +184,8 @@ const Home: NextPage = ({data}: PostsProps) => {
       </section>
 
       {/* BLOG */}
-      <section className={styles.blog}>
-        <div className="content">
-          <div className={styles.link}>
-            <h3>EDUCATION </h3>
-          </div>
-          <div className={styles.link}>
-            <h3>CODE & DESIGN </h3>
-          </div>
-          <div className={styles.link}>
-            <h3>FAMILY </h3>
-          </div>
-          <div className={styles.link}>
-            <h3>EXPERIENCE </h3>
-          </div>
-          <div className={styles.link}>
-            <h3>BUSINESS </h3>
-          </div>
-          <div className={styles.link}>
-            <h3>TRAVEL</h3>
-          </div>
-          <div className={styles.link}>
-            <h3>explore</h3>
-          </div>
-        </div>
-      </section>
+      <Blog />
+      
     </>
   )
 }

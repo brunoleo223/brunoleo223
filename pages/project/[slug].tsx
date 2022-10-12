@@ -3,6 +3,7 @@ import { request } from "../../lib/datocms";
 import { StructuredText } from "react-datocms";
 import { Image as ImageDato } from "react-datocms";
 import styles from "../../styles/Projetc.module.scss";
+import { Blog } from "../../components/Blog";
 
 export function Article({post}: PostProps){
     
@@ -41,6 +42,8 @@ export function Article({post}: PostProps){
                     />
                 </div>
             </div>
+            
+            <Blog />
         </>
     )
 }
@@ -61,7 +64,7 @@ export function Article({post}: PostProps){
         let paths: string[] = [];
         
         slugQuery.allProjects.map((p: any) => {
-            paths.push(`/articles/${p.slug}`);
+            paths.push(`/project/${p.slug}`);
         })
         
         return {

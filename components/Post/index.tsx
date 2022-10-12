@@ -15,7 +15,7 @@ export function Post({post}: PostProps){
             <div className={styles.post__content}>
                 <h3>{post.title}</h3>
                 <StructuredText data={post.description} />
-                <Link href={`articles/${post.slug}`}>
+                <Link href={`project/${post.slug}`}>
                     <a><Image src='/img/seta.png' width={80} height={30} /></a>
                 </Link>
             </div>
