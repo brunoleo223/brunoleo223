@@ -2,27 +2,46 @@ import { PostProps } from "../../@types/Post";
 import { request } from "../../lib/datocms";
 import { StructuredText } from "react-datocms";
 import { Image as ImageDato } from "react-datocms";
-import Image from "next/image";
+import styles from "../../styles/Projetc.module.scss";
 
 export function Article({post}: PostProps){
-    console.log(post)
+    
     return(
-        <div>
-            <h1>{post.title}</h1>
-            <StructuredText 
-            data={post.content} 
-            renderBlock={({ record }: any) => {
-                switch (record.__typename) {
-                    case 'MidiaContentRecord':
-                        return record.imageVideo.responsiveImage 
-                            ? <ImageDato data={record.imageVideo.responsiveImage} /> 
-                            : <video autoPlay muted><source src={record.imageVideo.video.mp4Url} type="video/mp4" /></video>
-                    default:
-                    return null;
-                }
-            }}
-            />
-        </div>
+        <>
+            <div className="content">
+                <div className={styles.post__cover}>
+                    <ImageDato data={post.cover.responsiveImage} />
+                </div>
+                <div className={styles.infos}>
+                    <div className={styles.data}>
+                        <h1>{post.title}</h1>
+                        <StructuredText data={post.description} />
+                    </div>
+                    <div className={styles.lists}>
+                        {post.technologies ? <div><StructuredText data={post.technologies} /></div> : null}
+                        {post.plataform ? <div><StructuredText data={post.plataform} /></div> : null}
+                        {post.links ? <div><StructuredText data={post.links} /></div> : null}
+                    </div>
+                </div>
+                <div className={styles.media}>
+                    <StructuredText 
+                    data={post.content} 
+                    renderBlock={({ record }: any) => {
+                        switch (record.__typename) {
+                            case 'MidiaContentRecord':
+                                return record.imageVideo.responsiveImage 
+                                    ? <ImageDato data={record.imageVideo.responsiveImage} /> 
+                                    : <video className={styles.video} autoPlay muted><source src={record.imageVideo.video.mp4Url} type="video/mp4" /></video>
+                            case 'VideoRecord':
+                                return <video className={styles.video} autoPlay muted><source src={record.video.video.mp4Url} type="video/mp4" /></video>
+                            default:
+                            return null;
+                        }
+                    }}
+                    />
+                </div>
+            </div>
+        </>
     )
 }
     
@@ -124,6 +143,15 @@ export function Article({post}: PostProps){
                 value
                 links
             }
+            links {
+                value
+              }
+              technologies {
+                value
+              }
+              plataform {
+                value
+              }
         }
     }
     

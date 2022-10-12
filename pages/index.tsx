@@ -9,7 +9,6 @@ import PostsJson from '../data/posts.json'
 import AboutJson from '../data/about-me.json'
 import CompaniesJson from '../data/companies.json'
 import DepoimentsJson from '../data/depoiments.json'
-import { Footer } from '../components/Footer';
 import { request } from '../lib/datocms';
 import { PostsProps } from '../@types/Post';
 
@@ -210,8 +209,6 @@ const Home: NextPage = ({data}: PostsProps) => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   )
 }

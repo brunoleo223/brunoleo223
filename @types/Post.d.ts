@@ -8,6 +8,9 @@ export interface PostProps {
         };
         content: any;
         description: any;
+        links?: any;
+        technologies?: any;
+        plataform?: any;
     }
 }
 
