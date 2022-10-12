@@ -4,6 +4,9 @@
     left: 50px;
     z-index: 99999;
     padding: 0;
+    @media(max-width: 992px){
+        left: 30px;
+    }
     button{
         background-color: var(-bg);
         width: 40px;

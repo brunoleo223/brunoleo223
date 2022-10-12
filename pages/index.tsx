@@ -32,7 +32,7 @@ const Home: NextPage = ({data}: PostsProps) => {
       </section>
 
       {/* PROJETOS */}
-      <section className={styles.projects}>
+      <section id='projects' className={styles.projects}>
         <div className={styles.clip}></div>
         <div className={styles.wrapper}>
           {postsData.map(post => (
@@ -42,7 +42,7 @@ const Home: NextPage = ({data}: PostsProps) => {
       </section>
 
       {/* SOBRE */}
-      <section className={styles.about}>
+      <section id="about" className={styles.about}>
         <div className="content">
           <div className="row">
             <h1>{about?.firstName}<br/>{about?.lastName}</h1>
@@ -87,7 +87,7 @@ const Home: NextPage = ({data}: PostsProps) => {
       </div>
 
       {/* SKILLS */}
-      <section className={styles.skills}>
+      <section id="skills" className={styles.skills}>
         <div className="content">
           <div className="row">
             <div className={styles.skills__photo}>
@@ -113,7 +113,7 @@ const Home: NextPage = ({data}: PostsProps) => {
                 ))}
               </div>
 
-              <div className={styles.itens}>
+              <div id="experiences" className={styles.itens}>
                 <h3>Experiências</h3>
                 {experiences.map(exp => (
                   <div className={styles.item} key={exp.id}>
