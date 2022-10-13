@@ -5,8 +5,8 @@ import { PostProps } from "../../@types/Post";
 import styles from "./styles.module.scss";
 import { StructuredText } from "react-datocms";
 
-export function Post({post}: PostProps){   
-    console.log(post)
+export function Post(props: any){   
+    const {post}: PostProps = props;
     return (
         <div className={styles.post}>
             <div className={styles.post__cover}>

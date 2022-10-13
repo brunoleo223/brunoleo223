@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link';
 import { Post } from '../components/Post'
@@ -12,12 +12,10 @@ import { request } from '../lib/datocms';
 import { PostsProps } from '../@types/Post';
 import { Blog } from '../components/Blog';
 
-const Home: NextPage = ({data}: PostsProps) => {
-
-  console.log(data.allProjects)
+const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) => {
 
   // const postsData = PostsJson.posts;
-  const postsData = data.allProjects;
+  const postsData: PostsProps[] = data.allProjects;
   const companies = CompaniesJson.companies;
   const depoiments = DepoimentsJson.depoiments;
   const
@@ -220,7 +218,7 @@ const BLOG_QUERY = `query MyQuery {
 }
 `;
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async (context) => {
   const data = await request({
     query: BLOG_QUERY,
   })
