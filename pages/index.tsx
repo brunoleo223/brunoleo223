@@ -61,7 +61,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
                 {about?.social.map(item => (
                   <li>
                     <Link href={item.link} key={item.id}>
-                      <a><Image src={item.iconUrl} width={40} height={40} alt={item.name} /></a>
+                      <a target="_blank"><Image src={item.iconUrl} width={40} height={40} alt={item.name} /></a>
                     </Link>
                   </li>
                 ))}
@@ -79,8 +79,8 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
           <p>
           Keep Learning <br />
           Digital Culture <br />
-          Design as solution <br />
-          Code as possibility
+          Design as Solution <br />
+          Code as Possibility
           </p>
       </div>
 
@@ -94,7 +94,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
             <div className={styles.skills__content}>
               <h2>
               <span>“</span><br />
-              I use design, research and technologie to develope amazing user experience for companies and consumers
+                I USE DESIGN, RESEARCH AND TECHNOLOGY TO DEVELOP AMAZING USER EXPERIENCE FOR COMPANIES AND CONSUMERS
               </h2>
 
               <div className={styles.itens}>
@@ -112,7 +112,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
               </div>
 
               <div id="experiences" className={styles.itens}>
-                <h3>Experiências</h3>
+                <h3>EXPERIENCES</h3>
                 {experiences.map(exp => (
                   <div className={styles.item} key={exp.id}>
                     <div className={styles.img}>

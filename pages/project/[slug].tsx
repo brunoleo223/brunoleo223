@@ -32,9 +32,9 @@ export function Article({post}: PostProps){
                             case 'MidiaContentRecord':
                                 return record.imageVideo.responsiveImage 
                                     ? <ImageDato data={record.imageVideo.responsiveImage} /> 
-                                    : <video className={styles.video} autoPlay muted><source src={record.imageVideo.video.mp4Url} type="video/mp4" /></video>
+                                    : <video className={styles.video} autoPlay muted loop><source src={record.imageVideo.video.mp4Url} type="video/mp4" /></video>
                             case 'VideoRecord':
-                                return <video className={styles.video} autoPlay muted><source src={record.video.video.mp4Url} type="video/mp4" /></video>
+                                return <video className={styles.video} autoPlay muted loop><source src={record.video.video.mp4Url} type="video/mp4" /></video>
                             default:
                             return null;
                         }

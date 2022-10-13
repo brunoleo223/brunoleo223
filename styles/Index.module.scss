@@ -19,6 +19,14 @@
     z-index: 9999;
     position: relative;
 
+    &::after{
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: var(--bg);
+        display: block;
+    }
+
     &::before{
         content: '';
         position: absolute;

@@ -3,6 +3,36 @@
         {
             "id": 0,
             "name": "Erick Varela",
+            "depoiment": "I'm lucky enough to be able to tell Bruno when I need to. He's one of the rare devs who provide excellent service on time, he's always up to date and he knows what he's doing!",
+            "companie": "Bloco-b",
+            "link": "#"
+        },
+        {
+            "id": 1,
+            "name": "Rennan Medina",
+            "depoiment": "Working with Bruno Leonardo was an incredible experience. Not just for being an extremely friendly and nice person, who brings you closer to him, but for all the knowledge he has and that he is willing to share with you.",
+            "companie": "Frontend Developer",
+            "link": "#"
+        },
+        {
+            "id": 2,
+            "name": "Larissa Bezerra",
+            "depoiment": "Bruno Leonardo was my manager for two years and I can say that it was one of the most enriching experiences I have had to date.",
+            "companie": "Automation Analyst",
+            "link": "#"
+        },
+        {
+            "id": 3,
+            "name": "Jeferson Almeida",
+            "depoiment": "Working with Leo was an incredible experience. The mixture of calm, agility and knowledge always solve the problems and afflictions that appeared in everyday life.",
+            "companie": "Events Manager",
+            "link": "#"
+        }
+    ], 
+    "depoiments-PT": [
+        {
+            "id": 0,
+            "name": "Erick Varela",
             "depoiment": "Tenho a sorte de poder contar o Bruno quando preciso. É um dos raros devs que prestam um excelente serviço dentro do prazo estabelecido, está sempre se atualizando e sabe o que está fazendo!",
             "companie": "Bloco-b",
             "link": "#"

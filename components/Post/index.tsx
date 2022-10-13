@@ -10,10 +10,12 @@ export function Post(props: any){
     return (
         <div className={styles.post}>
             <div className={styles.post__cover}>
-                <ImageDato data={post.cover.responsiveImage} />
+                    <ImageDato data={post.cover.responsiveImage} />
             </div>
             <div className={styles.post__content}>
-                <h3>{post.title}</h3>
+                <Link href={`project/${post.slug}`}>
+                    <h3>{post.title}</h3>
+                </Link>
                 <StructuredText data={post.description} />
                 <Link href={`project/${post.slug}`}>
                     <a><Image src='/img/seta.png' width={80} height={30} /></a>

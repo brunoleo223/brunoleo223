@@ -3,25 +3,25 @@
         "id": 0,
         "firstName": "Bruno",
         "lastName": "Leonardo",
-        "miniBio": "Desenvolvedor front-end, com 10 anos de experiência e mais de 100 sites programados do zero. Co-fundador da Agência VALUE de Marketing Digital e do Coletivo RUP de educação livre. Completamente dedicado a explorar o futuro e suas tecnologias.",
+        "miniBio": "Front-end developer, with 10 years of experience and more than 100 websites programmed from scratch. Co-founder of the VALUE Digital Marketing Agency and the RUP Collective for free education. Completely dedicated to exploring the future and its technologies.",
         "social": [
             {
                 "id": 0,
                 "name": "Github",
                 "iconUrl": "/img/github.svg",
-                "link": "#"
+                "link": "https://github.com/brunoleo223"
             }, 
             {
                 "id": 1,
                 "name": "Linkedin",
                 "iconUrl": "/img/linkedin.svg",
-                "link": "#"
+                "link": "https://www.linkedin.com/in/bruno-leonardo-9105a8167/"
             }, 
             {
                 "id": 2,
                 "name": "Instagrams",
                 "iconUrl": "/img/instagram.svg",
-                "link": "#"
+                "link": "https://www.instagram.com/bleo.co/"
             }
         ]
     },
@@ -29,7 +29,7 @@
         {
             "id": 0,
             "title": "Frontend",
-            "content": "HTML, CSS, Javascript, React JS, Next JS, Wordpress, PHP, MySQL, Tailwind, Fauna DB, Mongo DB, Vite JS, Webpack"
+            "content": "HTML, CSS, Javascript, React JS, Next JS, Wordpress, PHP, MySQL, Tailwind CSS, Fauna DB, Mongo DB, Vite JS, Webpack"
         }, 
         {
             "id": 1,
@@ -39,17 +39,17 @@
         {
             "id": 2,
             "title": "Marketing",
-            "content": "SEO, Facebook e Google Ads, Analytics, CRM, Relatórios"
+            "content": "SEO, Facebook and Google Ads, Analytics, CRM, Reports"
         },
         {
             "id": 3,
-            "title": "Negócios",
-            "content": "Organização, Gestão de pessoas, Gestão de projetos, Apresentações, Pitch, Solução de Problemas, Facilidade para lidar com pressão"
+            "title": "Business",
+            "content": "Organization, People Management, Project Management, Presentations, Pitch, Problem Solving, Ease of Dealing with Pressure"
         },
         {
             "id": 4,
             "title": "Idiomas",
-            "content": "Inglês avançado, espanhol básico para escrita e avançado para conversas"
+            "content": "Advanced English, basic Spanish for writing and advanced Spanish for conversation"
         }
         
     ],
@@ -61,7 +61,7 @@
             "logoUrl": "/img/exp1.jpeg",
             "role": "Tech Lead",
             "duration": "2 yrs 5 mos",
-            "description": "Alinhamento e direcionamento de uma equipe de desenvolvimento de software com 10 integrantes."
+            "description": "Alignment and direction of a software development team with 10 members"
         },
         {
             "id": 1,
@@ -69,7 +69,7 @@
             "logoUrl": "/img/exp2.jpeg",
             "role": "Co-founder and CTO",
             "duration": "6 years",
-            "description": "Digital Marketing Agency focused on medium-sized companies."
+            "description": "Digital Marketing Agency focused on medium-sized companies"
         },
         {
             "id": 2,
@@ -77,7 +77,7 @@
             "logoUrl": "/img/exp3.jpeg",
             "role": "Content Creator",
             "duration": "6 mos",
-            "description": "Criação de conteúdo de Negócios. Foram mais de 100 publicações feitas entre lives, roteirização, gravação e edição de reels para o Instagram, stories e feed posts."
+            "description": "Business content creation. There were more than 100 publications made between lives, scripting, recording and editing reels for Instagram, stories and feed posts"
         },
         {
             "id": 3,
@@ -85,7 +85,7 @@
             "logoUrl": "/img/exp4.jpeg",
             "role": "Co-founder",
             "duration": "6 mos",
-            "description": "Organização de encontros livres sobre criatividade, design e experiência."
+            "description": "Organization of free meetings about creativity, design and experience"
         },
         {
             "id": 4,
@@ -93,7 +93,7 @@
             "logoUrl": "/img/exp5.jpeg",
             "role": "Desenvolvedor web front end",
             "duration": "6 mos",
-            "description": "Criação de site e páginas para eventos"
+            "description": "Website and event page creation"
         }
     ],
     
@@ -101,39 +101,19 @@
         {
             "id": 0,
             "logoUrl": "/img/edu1.jpeg",
-            "title": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+            "title": "Technologist Degree in Systems Analysis and Development",
             "school": "Universidade Católica de Brasília"
         },
         {
             "id": 0,
             "logoUrl": "/img/edu2.jpeg",
-            "title": "Master of Business Administration - MBA, Marketing e Negócios Digitais",
+            "title": "Master of Business Administration - MBA, Marketing and Digital Business",
             "school": "Be Academy"
         },
         {
             "id": 0,
             "logoUrl": "/img/edu3.jpeg",
-            "title": "Turma 10 no treinamento imersivo nas tecnologias mais modernas de desenvolvimento web e mobile.",
-            "school": "Rocketseat"
-        }
-    ],
-    "testing": [
-        {
-            "id": 0,
-            "logoUrl": "/img/edu3.jpeg",
-            "title": "Turma 10 no treinamento imersivo nas tecnologias mais modernas de desenvolvimento web e mobile.",
-            "school": "Rocketseat"
-        },
-        {
-            "id": 0,
-            "logoUrl": "/img/edu3.jpeg",
-            "title": "Turma 10 no treinamento imersivo nas tecnologias mais modernas de desenvolvimento web e mobile.",
-            "school": "Rocketseat"
-        },
-        {
-            "id": 0,
-            "logoUrl": "/img/edu3.jpeg",
-            "title": "Turma 10 no treinamento imersivo nas tecnologias mais modernas de desenvolvimento web e mobile.",
+            "title": "Class 10 in immersive training in the most modern technologies of web and mobile development",
             "school": "Rocketseat"
         }
     ]
