@@ -37,7 +37,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:description" content="with 10 years of experience and more than 100 websites programmed from scratch." />
 				<meta name="twitter:title" content="Bruno Leonardo - Frontend Developer" />
-				<meta property="og:image" content="https://brunoleo.com.br/images/thumb.jpg" />
+				<meta property="og:image" content="https://brunoleo.com.br/_next/image?url=%2Fimg%2Fthumb.png&w=3840&q=75" />
 				<meta property="og:image:type" content="image/jpeg"/> 
         <meta property="og:image:width" content="800" />
 				<meta property="og:image:height" content="600" />

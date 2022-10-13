@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from './styles.module.scss';
 
 export function Menu(){
-    const [menu, setMenu] = useState(true);
+    const [menu, setMenu] = useState(false);
 
     const handleMenu = () => {
         setMenu(!menu);
