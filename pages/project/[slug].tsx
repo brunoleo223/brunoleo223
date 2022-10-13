@@ -1,14 +1,18 @@
 import { PostProps } from "../../@types/Post";
 import { request } from "../../lib/datocms";
-import { StructuredText } from "react-datocms";
+import { StructuredText, renderMetaTags } from "react-datocms";
 import { Image as ImageDato } from "react-datocms";
 import styles from "../../styles/Projetc.module.scss";
 import { Blog } from "../../components/Blog";
+import Head from "next/head";
 
 export function Article({post}: PostProps){
     
     return(
         <>
+            <Head>
+                {renderMetaTags(post.seo.concat())}
+            </Head>
             <div className="content">
                 <div className={styles.post__cover}>
                     <ImageDato data={post.cover.responsiveImage} />
@@ -76,6 +80,11 @@ export function Article({post}: PostProps){
     
     const ARTICLE_QUERY = `query MyQuery($slug: String) {
         project(filter: {slug: {eq: $slug}}, locale: en) {
+            seo: _seoMetaTags {
+                tag
+                content
+                attributes
+            }
             title
             slug
             id

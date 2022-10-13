@@ -11,6 +11,7 @@ export interface PostProps {
         links?: any;
         technologies?: any;
         plataform?: any;
+        seo:any;
     }
 }
 

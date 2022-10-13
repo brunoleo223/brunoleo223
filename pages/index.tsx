@@ -11,6 +11,7 @@ import DepoimentsJson from '../data/depoiments.json'
 import { request } from '../lib/datocms';
 import { PostsProps } from '../@types/Post';
 import { Blog } from '../components/Blog';
+import Head from 'next/head';
 
 const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) => {
 
@@ -22,6 +23,25 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
    {about, skills, education, experiences}: AboutMeProps = AboutJson;
   return (
     <>
+      <Head>
+        <title>Bruno Leonardo - Frontend Developer</title>
+				<meta name="description" content="with 10 years of experience and more than 100 websites programmed from scratch." />
+				<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+				<link rel="canonical" href="https://brunoleo.com.br" />
+				<meta property="og:locale" content="pt_BR" />
+				<meta property="og:type" content="website" />
+				<meta property="og:title" content="Bruno Leonardo - Frontend Developer" />
+				<meta property="og:description" content="with 10 years of experience and more than 100 websites programmed from scratch." />
+				<meta property="og:url" content="https://brunoleo.com.br" />
+				<meta property="og:site_name" content="Bruno Leonardo - Frontend Developer" />
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta name="twitter:description" content="with 10 years of experience and more than 100 websites programmed from scratch." />
+				<meta name="twitter:title" content="Bruno Leonardo - Frontend Developer" />
+				<meta property="og:image" content="https://brunoleo.com.br/images/thumb.jpg" />
+				<meta property="og:image:type" content="image/jpeg"/> 
+        <meta property="og:image:width" content="800" />
+				<meta property="og:image:height" content="600" />
+      </Head>
       {/* INTRO */}
       <section className={styles.intro}>
         <div className={styles.img}>
