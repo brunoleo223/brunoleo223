@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
-    <Html>
+    <Html lang='en'>
       <Head>
         <link rel="stylesheet" href="/font/font.css" />
         <link rel="icon" href="/favicon.png" />

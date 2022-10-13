@@ -18,7 +18,7 @@ export function Post(props: any){
                 </Link>
                 <StructuredText data={post.description} />
                 <Link href={`project/${post.slug}`}>
-                    <a><Image src='/img/seta.png' width={80} height={30} /></a>
+                    <a aria-label={post.title}><Image src='/img/seta.png' width={80} height={30} alt="Continue Reading" title="Continue Reading" /></a>
                 </Link>
             </div>
         </div>

@@ -23,7 +23,7 @@ export function Footer(){
                 ))}
               </ul>
               <div className={styles.logo}>
-                <Image src="/img/footer.png" layout="fill" alt="Bruno Leo" />
+                <Image src="/img/footer.png" layout="fill" alt="Bruno Leo Footer" />
               </div>
             </div>
         </footer>

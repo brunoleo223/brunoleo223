@@ -45,7 +45,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
       {/* INTRO */}
       <section className={styles.intro}>
         <div className={styles.img}>
-          <Image src='/img/intro.png' layout='fill' />
+          <Image src='/img/intro.png' layout='fill' alt='Bruno Leonardo intro logo' />
         </div>
       </section>
 
@@ -88,7 +88,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
               </ul>
             </div>
             <div className={styles.about__photo}>
-              <Image src='/img/foto1.png' layout='fill' />
+              <Image src='/img/foto1.png' layout='fill' alt='Bruno Leonardo with laptop' />
             </div>
           </div>
         </div>
@@ -109,7 +109,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
         <div className="content">
           <div className="row">
             <div className={styles.skills__photo}>
-              <Image src='/img/foto2.png' layout='fill' />
+              <Image src='/img/foto2.png' layout='fill' alt='Bruno Leonardo profile picture' />
             </div>
             <div className={styles.skills__content}>
               <h2>
@@ -136,7 +136,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
                 {experiences.map(exp => (
                   <div className={styles.item} key={exp.id}>
                     <div className={styles.img}>
-                      <Image src={exp.logoUrl} width={100} height={100} />
+                      <Image src={exp.logoUrl} width={100} height={100} alt={exp.company} />
                     </div>
                     <p>
                       <b>{exp.company}</b>
@@ -153,7 +153,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
                 {education.map(edu => (
                   <div className={styles.item} key={edu.id}>
                     <div className={styles.img}>
-                      <Image src={edu.logoUrl} width={100} height={100} />
+                      <Image src={edu.logoUrl} width={100} height={100} alt={edu.school} />
                     </div>
                     <p>
                       <b>{edu.title}</b>
@@ -177,7 +177,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
           <div className={styles.logos}>
             {companies.map(logo => (
               <div className={styles.logo}>
-                <Image src={logo.logoUrl} layout="fill" key={logo.name} />
+                <Image src={logo.logoUrl} layout="fill" key={logo.name} alt={logo.name} />
               </div>
             ))}
           </div>
