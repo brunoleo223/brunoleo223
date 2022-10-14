@@ -11,7 +11,7 @@ export function Footer(){
         <footer id="contact" className={styles.footer}>
             <div className="content">
                 <Link href="mailto:bruno@codeskills.com.br">
-                    <a className={styles.mail}>bruno<span>@</span>@codeskills.com.br</a>
+                    <a className={styles.mail}>bruno<span>@</span>codeskills.com.br</a>
                 </Link>
                 <ul>
                 {about?.social.map(item => (
