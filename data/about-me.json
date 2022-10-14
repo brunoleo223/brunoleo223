@@ -19,9 +19,15 @@
             }, 
             {
                 "id": 2,
-                "name": "Instagrams",
+                "name": "Instagram",
                 "iconUrl": "/img/instagram.svg",
-                "link": "https://www.instagram.com/bleo.co/"
+                "link": "https://www.instagram.com/bruno__leonardo__/"
+            }, 
+            {
+                "id": 3,
+                "name": "Codeskills",
+                "iconUrl": "/img/codeskills.svg",
+                "link": "https://codeskills.com.br/"
             }
         ]
     },
