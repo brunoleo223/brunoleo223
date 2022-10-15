@@ -37,6 +37,7 @@
         height: 0;
         overflow: hidden;
         margin: 0;
+        transition: all .4s ease-in-out;
         li{
             margin-bottom: -10px;
             a{
@@ -50,6 +51,6 @@
     }
 
     .ul_active{
-        height: auto;
+        height: 500px;
     }
 }
