@@ -99,8 +99,8 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
           <p>
           Keep Learning <br />
           Digital Culture <br />
-          Design as Solution <br />
-          Code as Possibility
+          Design as a Solution <br />
+          Code as a Possibility
           </p>
       </div>
 
