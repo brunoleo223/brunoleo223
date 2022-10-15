@@ -11,7 +11,7 @@ export function Menu(){
 
     return (
         <menu className={styles.menu}>
-            <button aria-label="Menu" title="Menu" onClick={handleMenu} className={menu ? styles.button_active : ``}></button>
+            <button aria-label="Menu" title="Menu" onClick={handleMenu} className={menu ? styles.button_active : ``}>+</button>
             <ul className={menu ? styles.ul_active : ``}>
                 <li><Link href={'/'}><a>home</a></Link></li>
                 <li><Link href={'/#projects'}><a>projects</a></Link></li>

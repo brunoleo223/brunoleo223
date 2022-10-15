@@ -14,10 +14,20 @@
         border: 1px solid var(--highlight);
         border-radius: 50%;
         cursor: pointer;
+        color: #fff;
+        font-size: 20px;
+        transition: all .4s ease-in-out;
+        background-color: var(--highlight);
+
+        &:hover{
+            font-size: 25px;
+        }
 
     }
     .button_active{
         background-color: var(--highlight);
+        transform: rotate(45deg);
+        font-size: 25px;
     }
     ul{
         list-style: none;
