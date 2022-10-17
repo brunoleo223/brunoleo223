@@ -53,7 +53,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
       <section id='projects' className={styles.projects}>
         <div className={styles.clip}></div>
         <div className={styles.wrapper}>
-          {postsData.map((post) => (
+          {postsData.map((post: any) => (
             <Post post={post} key={post.slug} />
           ))}
         </div>
