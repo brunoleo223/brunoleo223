@@ -15,8 +15,8 @@ export function Footer(){
                 </Link>
                 <ul>
                 {about?.social.map(item => (
-                  <li>
-                    <Link href={item.link} key={item.id}>
+                  <li key={`social-${item.name}`}>
+                    <Link href={item.link}>
                       <a target="_blank"><Image src={item.iconUrl} width={40} height={40} alt={item.name} /></a>
                     </Link>
                   </li>

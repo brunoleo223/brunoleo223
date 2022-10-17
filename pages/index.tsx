@@ -53,8 +53,8 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
       <section id='projects' className={styles.projects}>
         <div className={styles.clip}></div>
         <div className={styles.wrapper}>
-          {postsData.map(post => (
-            <Post post={post} />
+          {postsData.map((post) => (
+            <Post post={post} key={post.slug} />
           ))}
         </div>
       </section>
@@ -79,8 +79,8 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
              
               <ul className={styles.social}>
                 {about?.social.map(item => (
-                  <li>
-                    <Link href={item.link} key={item.id}>
+                  <li key={`about-${item.id}`}>
+                    <Link href={item.link}>
                       <a target="_blank"><Image src={item.iconUrl} width={40} height={40} alt={item.name} /></a>
                     </Link>
                   </li>
@@ -120,7 +120,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
               <div className={styles.itens}>
                 <h3>SKILLS</h3>
                 {skills.map(skill => (
-                  <div className={styles.item} key={skill.id}>
+                  <div className={styles.item} key={`skill-${skill.id}`}>
                     <b>
                       {skill.title}
                     </b>
@@ -134,7 +134,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
               <div id="experiences" className={styles.itens}>
                 <h3>EXPERIENCES</h3>
                 {experiences.map(exp => (
-                  <div className={styles.item} key={exp.id}>
+                  <div className={styles.item} key={`exp-${exp.id}`}>
                     <div className={styles.img}>
                       <Image src={exp.logoUrl} width={100} height={100} alt={exp.company} />
                     </div>
@@ -151,7 +151,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
               <div className={styles.itens}>
                 <h3>Education</h3>
                 {education.map(edu => (
-                  <div className={styles.item} key={edu.id}>
+                  <div className={styles.item} key={`edu-${edu.school}`}>
                     <div className={styles.img}>
                       <Image src={edu.logoUrl} width={100} height={100} alt={edu.school} />
                     </div>
@@ -176,8 +176,8 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
           </h2>
           <div className={styles.logos}>
             {companies.map(logo => (
-              <div className={styles.logo}>
-                <Image src={logo.logoUrl} layout="fill" key={logo.name} alt={logo.name} />
+              <div className={styles.logo} key={logo.name} >
+                <Image src={logo.logoUrl} layout="fill" alt={logo.name} />
               </div>
             ))}
           </div>
@@ -190,7 +190,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
           <div className={styles.itens}>
             {
               depoiments.map(depoiment => (
-                <div className={styles.depoiment}>
+                <div className={styles.depoiment} key={depoiment.name}>
                   <p>{depoiment.depoiment}</p>
                   <p><b>{depoiment.name}</b></p>
                   <span>{depoiment.companie}</span>

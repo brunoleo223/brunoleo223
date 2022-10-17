@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,AAAA,CACL,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,IAAI,CAYpB,AAdD,AAII,SAJK,CAIL,EAAE,AAAA,CACE,SAAS,CAAE,KAAK,CAChB,aAAa,CAAE,KAAK,CACvB,AAPL,AASI,SATK,CASL,CAAC,AAAA,CACG,eAAe,CAAE,IAAI,CACrB,KAAK,CAAE,WAAW,CAClB,aAAa,CAAE,GAAG,CAAC,KAAK,CAAC,gBAAgB,CAC5C",
+    "sources": [
+        "../../styles/404.module.scss"
+    ],
+    "names": [],
+    "file": "404.module.css"
+}
