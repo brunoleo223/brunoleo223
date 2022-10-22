@@ -1,6 +1,6 @@
 import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
-import Image from 'next/image'
 import Link from 'next/link';
+import Image from 'next/image';
 import { Post } from '../components/Post'
 import styles from '../styles/Index.module.scss';
 import { AboutMeProps } from '../@types/About';
@@ -71,8 +71,8 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
                 {about?.miniBio}  
               </p>
               <h2>
-                <span>f</span><span>r</span><span>o</span><span>n</span><span>t</span><br/>
-                <span>e</span><span>n</span><span>d</span><br/>
+                <span>f</span><span>u</span><span>l</span><span>l</span><br/>
+                <span>s</span><span>t</span><span>a</span><span>c</span><span>k</span><br/>
                 <span>d</span><span>e</span><span>v</span><span>e</span><br/>
                 <span>l</span><span>o</span><span>p</span><span>e</span><span>r</span>
               </h2>
@@ -208,7 +208,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
   )
 }
 
-export default Home
+export default Home;
 
 
 const BLOG_QUERY = `query MyQuery {

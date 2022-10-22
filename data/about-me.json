@@ -35,7 +35,12 @@
         {
             "id": 0,
             "title": "Frontend",
-            "content": "HTML, CSS, Javascript, React JS, Next JS, Wordpress, PHP, MySQL, Tailwind CSS, Fauna DB, Mongo DB, Vite JS, Webpack"
+            "content": "HTML, CSS, Javascript, React JS, Next JS, Wordpress, Tailwind CSS, Vite JS, Webpack"
+        }, 
+        {
+            "id": 5,
+            "title": "Backend",
+            "content": "Node JS, Express, PHP, MySQL, Mongo DB, Fauna DB"
         }, 
         {
             "id": 1,
