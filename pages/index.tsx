@@ -30,13 +30,13 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
 				<link rel="canonical" href="https://brunoleo.work" />
 				<meta property="og:locale" content="pt_BR" />
 				<meta property="og:type" content="website" />
-				<meta property="og:title" content="Bruno Leonardo - Frontend Developer" />
+				<meta property="og:title" content="Bruno Leonardo - Fullstack Developer" />
 				<meta property="og:description" content="with 10 years of experience and more than 100 websites programmed from scratch." />
 				<meta property="og:url" content="https://brunoleo.work" />
-				<meta property="og:site_name" content="Bruno Leonardo - Frontend Developer" />
+				<meta property="og:site_name" content="Bruno Leonardo - Fullstack Developer" />
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:description" content="with 10 years of experience and more than 100 websites programmed from scratch." />
-				<meta name="twitter:title" content="Bruno Leonardo - Frontend Developer" />
+				<meta name="twitter:title" content="Bruno Leonardo - Fullstack Developer" />
 				<meta property="og:image" content="https://brunoleo.work/thumb.png" />
 				<meta property="og:image:type" content="image/jpeg"/> 
         <meta property="og:image:width" content="800" />
