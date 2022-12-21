@@ -1,8 +1,18 @@
-<h1 align="left">Hey, what's up? 🤘</h1>
+# Hey, what's up? 🤘
 
 ###
 
-<p align="left">I'm Bruno, front-end developer from Brazil 🇧🇷</p>
+✋ Frontend developer from Brazil 🇧🇷
+
+🧑🏻‍💻 I'am 26 years old and have over 10 years of experience.
+
+⚙️ JS, React, TS, Next, Node and +
+
+🧠 I have a lot of experience with code, business, marketing, leadership and product management.
+
+🎨 I love puzzles, movies, dogs, history and philosophy books
+
+🔗 All about me: www.brunoleo.work
 
 ###
 
