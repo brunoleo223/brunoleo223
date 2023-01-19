@@ -19,8 +19,13 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
   const postsData: PostsProps[] = data.allProjects;
   const companies = CompaniesJson.companies;
   const depoiments = DepoimentsJson.depoiments;
-  const
-   {about, skills, education, experiences}: AboutMeProps = AboutJson;
+  const {about, skills, education, experiences}: AboutMeProps = AboutJson;
+  const tagAnalytics = (name: string) => {
+    //@ts-ignore
+    gtag('event', 'social_click', {
+      'item_click': `${name}`,
+    });
+  }
   return (
     <>
       <Head>
@@ -81,7 +86,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
                 {about?.social.map(item => (
                   <li key={`about-${item.id}`}>
                     <Link href={item.link}>
-                      <a target="_blank"><Image src={item.iconUrl} width={40} height={40} alt={item.name} /></a>
+                      <a onClick={() => tagAnalytics(item.name)} target="_blank"><Image src={item.iconUrl} width={40} height={40} alt={item.name} /></a>
                     </Link>
                   </li>
                 ))}
