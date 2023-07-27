@@ -8,7 +8,7 @@ export default function Document() {
         <link rel="stylesheet" href="/font/font.css" />
         <link rel="icon" href="/favicon.png" />
         <Script strategy="lazyOnload" async src="https://www.googletagmanager.com/gtag/js?id=G-YQC66KC5HP"></Script>
-        <Script strategy="afterInteractive">
+        <Script strategy="lazyOnload">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
