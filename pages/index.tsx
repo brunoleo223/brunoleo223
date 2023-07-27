@@ -21,9 +21,11 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
   const depoiments = DepoimentsJson.depoiments;
   const {about, skills, education, experiences}: AboutMeProps = AboutJson;
   const tagAnalytics = (name: string) => {
+    console.log(name)
     //@ts-ignore
     gtag('event', 'social_click', {
       'item_click': `${name}`,
+      'debug_mode': true
     });
   }
   return (
