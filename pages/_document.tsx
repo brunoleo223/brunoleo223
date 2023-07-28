@@ -7,7 +7,6 @@ export default function Document() {
       <Head>
         <link rel="stylesheet" href="/font/font.css" />
         <link rel="icon" href="/favicon.png" />
-        <Script strategy="lazyOnload" async src="https://www.googletagmanager.com/gtag/js?id=G-YQC66KC5HP"></Script>
         <Script id="gtm-script" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
