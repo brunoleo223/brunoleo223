@@ -10,14 +10,14 @@ export function Footer(){
     return (
         <footer id="contact" className={styles.footer}>
             <div className="content">
-                <Link href="mailto:bruno@codeskills.com.br">
-                    <a className={styles.mail}>bruno<span>@</span>codeskills.com.br</a>
+                <Link href="mailto:brunoleo223@gmail.com">
+                    <a id='mail_contact' className={styles.mail}>brunoleo223<span>@</span>gmail.com</a>
                 </Link>
                 <ul>
                 {about?.social.map(item => (
                   <li key={`social-${item.name}`}>
                     <Link href={item.link}>
-                      <a target="_blank"><Image src={item.iconUrl} width={40} height={40} alt={item.name} /></a>
+                      <a className='social_click' id={item.name} target="_blank"><Image src={item.iconUrl} width={40} height={40} alt={item.name} /></a>
                     </Link>
                   </li>
                 ))}

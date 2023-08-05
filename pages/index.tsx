@@ -21,17 +21,17 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
   const depoiments = DepoimentsJson.depoiments;
   const {about, skills, education, experiences}: AboutMeProps = AboutJson;
   const tagAnalytics = (name: string) => {
-    console.log(name)
     //@ts-ignore
-    gtag('event', 'social_click', {
-      'item_click': `${name}`,
-      'debug_mode': true
+    window.dataLayer.push({
+      event: 'social_click',
+      item_click: `${name}`,
+      debug_mode: true
     });
   }
   return (
     <>
       <Head>
-        <title>Bruno Leonardo - Frontend Developer</title>
+        <title>Bruno Leonardo - Fullstack Developer</title>
 				<meta name="description" content="with 10 years of experience and more than 100 websites programmed from scratch." />
 				<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 				<link rel="canonical" href="https://brunoleo.work" />
@@ -88,7 +88,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
                 {about?.social.map(item => (
                   <li key={`about-${item.id}`}>
                     <Link href={item.link}>
-                      <a onClick={() => tagAnalytics(item.name)} target="_blank"><Image src={item.iconUrl} width={40} height={40} alt={item.name} /></a>
+                      <a id={item.name} className='social_click' target="_blank"><Image src={item.iconUrl} width={40} height={40} alt={item.name} /></a>
                     </Link>
                   </li>
                 ))}
