@@ -43,6 +43,11 @@
             "content": "Node JS, Express, PHP, MySQL, Mongo DB, Fauna DB"
         }, 
         {
+            "id": 6,
+            "title": "Data Analytics",
+            "content": "Google Analytics 4, GTM, AppsFlyer, Looker Studio"
+        },
+        {
             "id": 1,
             "title": "Design",
             "content": "Photoshop, Illustrator, Figma, Adobe XD, Canva, Adobe Premiere"
@@ -68,6 +73,14 @@
     "experiences": [
         {
             "id": 0,
+            "company": "I-Cherry",
+            "logoUrl": "/img/exp6.jpg",
+            "role": "Data Analysis Coordinator",
+            "duration": "Jan 23 - Now",
+            "description": "Leadership in data engineering and data collection projects"
+        },
+        {
+            "id": 1,
             "company": "Grupo Digital Solvers",
             "logoUrl": "/img/exp1.jpeg",
             "role": "Tech Lead",
@@ -75,7 +88,7 @@
             "description": "Alignment and direction of a software development team with 10 members"
         },
         {
-            "id": 1,
+            "id": 2,
             "company": "Agência Value",
             "logoUrl": "/img/exp2.jpeg",
             "role": "Co-founder and CTO",
@@ -83,7 +96,7 @@
             "description": "Digital Marketing Agency focused on medium-sized companies"
         },
         {
-            "id": 2,
+            "id": 3,
             "company": "Trilha MPN",
             "logoUrl": "/img/exp3.jpeg",
             "role": "Content Creator",
@@ -91,7 +104,7 @@
             "description": "Business content creation. There were more than 100 publications made between lives, scripting, recording and editing reels for Instagram, stories and feed posts"
         },
         {
-            "id": 3,
+            "id": 4,
             "company": "RUP Life",
             "logoUrl": "/img/exp4.jpeg",
             "role": "Co-founder",
@@ -99,12 +112,34 @@
             "description": "Organization of free meetings about creativity, design and experience"
         },
         {
-            "id": 4,
+            "id": 5,
             "company": "Impact HUB",
             "logoUrl": "/img/exp5.jpeg",
             "role": "Frontend web developer",
             "duration": "6 mos",
             "description": "Website and event page creation"
+        }
+    ],
+    
+    "certifications": [
+        {
+            "id": 139422824,
+            "name": "Google Analytics Individual Qualification",
+            "logoUrl": "/img/google.jpg",
+            "duration": "Issued Mar 2023 | Expires Mar 2024",
+            "credencial_link": "https://skillshop.exceedlms.com/student/award/2pAsds6mbqTKtYVzc83SAr9d"
+        },{
+            "id": 139422753,
+            "name": "Google Analytics Certification (GA4)",
+            "logoUrl": "/img/google.jpg",
+            "duration": "Issued Mar 2023 | Expires Mar 2024",
+            "credencial_link": "https://skillshop.credential.net/5e7b184c-a83b-423d-bafd-449c2b6be7b0"
+        },{
+            "id": "08c9219d-54bb-4541-b1f2-a7c5b4651815",
+            "name": "Meta Certified Media Buying Professional",
+            "logoUrl": "/img/meta.jpg",
+            "duration": "Issued Jun 2023 | Expires Jun 2024",
+            "credencial_link": "https://www.credly.com/badges/08c9219d-54bb-4541-b1f2-a7c5b4651815/linked_in_profile"
         }
     ],
     

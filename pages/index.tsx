@@ -19,7 +19,7 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
   const postsData: PostsProps[] = data.allProjects;
   const companies = CompaniesJson.companies;
   const depoiments = DepoimentsJson.depoiments;
-  const {about, skills, education, experiences}: AboutMeProps = AboutJson;
+  const {about, skills, education, experiences, certifications}: AboutMeProps = AboutJson;
   const tagAnalytics = (name: string) => {
     //@ts-ignore
     window.dataLayer.push({
@@ -150,6 +150,22 @@ const Home: NextPage = ({data}: InferGetStaticPropsType<typeof getStaticProps>) 
                       <b>{exp.role}</b>
                       <span>{exp.duration}</span>
                       {exp.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              <div id="certifications" className={styles.itens}>
+                <h3>CERTIFICATIONS</h3>
+                {certifications.map(cert => (
+                  <div className={styles.item} key={`exp-${cert.id}`}>
+                    <div className={styles.img}>
+                      <Image src={cert.logoUrl} width={100} height={100} alt={cert.name} />
+                    </div>
+                    <p>
+                      <b>{cert.name}</b>
+                      <b>{cert.duration}</b>
+                      <span><a href={cert.credencial_link} target='_blank'>See Credencial • ID {cert.id}</a></span>
                     </p>
                   </div>
                 ))}

@@ -2,6 +2,7 @@ export interface AboutMeProps{
     about?: MyDataProps;
     skills: SkillsProps[];
     experiences: ExperienceProps[];
+    certifications: CertificationsProps[];
     education: EducationProps[];
     
 }
@@ -34,6 +35,13 @@ export interface ExperienceProps {
     role: string;
     duration: string;
     description: string;
+}
+export interface CertificationsProps {
+    id: number|string;
+    name: string;
+    logoUrl: string;
+    duration: string;
+    credencial_link: string;
 }
 
 export interface EducationProps {

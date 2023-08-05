@@ -2,6 +2,30 @@
     "companies": [
 
         {
+            "name": "Estee Lauder",
+            "link": "#",
+            "logoUrl": "/img/logo15.png"
+        },
+        {
+            "name": "Honda",
+            "link": "#",
+            "logoUrl": "/img/logo14.png"
+        },
+        {
+            "name": "Google",
+            "link": "#",
+            "logoUrl": "/img/logo13.png"
+        },
+        {
+            "name": "Nike",
+            "link": "#",
+            "logoUrl": "/img/logo12.png"
+        },
+        {
+            "name": "Calvin Klein",
+            "link": "#",
+            "logoUrl": "/img/logo11.png"
+        },{
             "name": "Amgen",
             "link": "#",
             "logoUrl": "/img/logo10.png"
