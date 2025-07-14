@@ -4,7 +4,7 @@
 
 ✋ Frontend developer from Brazil 🇧🇷
 
-🧑🏻‍💻 I'am 26 years old and have over 10 years of experience.
+🧑🏻‍💻 I have over 10 years of experience.
 
 ⚙️ JS, React, TS, Next, Node and +
 
